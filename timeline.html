@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Планирование транспорта</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav class="topmenu">
+		<button class="btn-primary pointer mr-2">Добавить маршрут</button>
+		<button class="btn-secondary pointer mr-2">Фильтр транспорта</button>
+		<label for="checkbox-hidefull">
+			<input type="checkbox" id="checkbox-hidefull" class="checkbox">
+			Скрыть занятые
+		</label>
+	</nav>
+	<div class="timeline_wrapper">
+		<div id="timeline" class="timeline">
+			<div id="timeline_cursor" class="timeline_cursor"></div>
+			<div id="timeline_now" class="timeline_now">Сейчас</div>
+			<div class="timeline_date-area"></div>
+			<div class="timeline_time-area"></div>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="ts-timeline.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
